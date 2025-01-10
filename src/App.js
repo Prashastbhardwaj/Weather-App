@@ -1,15 +1,16 @@
 import React from 'react';
-import './index.css';
-import WeatherForm from './WeatherForm';
-
+import './App.css';
+import WeatherForm from './components/WeatherForm/WeatherForm';
 
 function App() {
-  
   return (
-    
-    <div className="App" >
-      <h1>Weather App</h1>
-      <WeatherForm />
+    <div className="App">
+      <div className="app-container">
+        <header className="app-header">
+          <h1>Weather App</h1>
+        </header>
+        <WeatherForm />
+      </div>
     </div>
   );
 }
